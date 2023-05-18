@@ -123,7 +123,7 @@ class TestFriends(unittest.TestCase):
 
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/snack lists together)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_favourite_foods(self):
     result = all_favourite_foods(self.people)
     expected = ["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"]
@@ -132,7 +132,7 @@ class TestFriends(unittest.TestCase):
 
   # 9. Find people with no friends
   # (hint: return a list, there might be more people in the future with no friends!)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_find_no_friends(self):
     self.assertEqual([self.person5], find_no_friends(self.people))
 
