@@ -40,8 +40,8 @@ def find_no_friends(people):
     return no_friends
 
 def unique_favourite_tv_shows(people):
-    unique_shows = []
+    unique_show = set()
     for person in people:
-        if (person["favourites"]["tv_show"] in unique_shows) != True:
-            unique_shows.append(person["favourites"]["tv_show"])
-    return unique_shows
+        if (person["favourites"]["tv_show"] in unique_show) != True:
+            unique_show.add(person["favourites"]["tv_show"])
+    return unique_show

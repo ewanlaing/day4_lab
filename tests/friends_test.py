@@ -146,3 +146,11 @@ class TestFriends(unittest.TestCase):
     self.assertEqual(expected, result)
 
   # BONUS: Try to refactor the previous test and function to use Python's built-in set() function, returning an object of all unique tv shows.
+
+  # BONUS!! Find the set of everyone's favourite tv shows joined together, with no duplicates
+    # (hint: return a list of all favourite tv shows that only appear once)
+  # @unittest.skip("delete this line to run the test")
+  def test_unique_favourite_tv_shows(self):
+    result = unique_favourite_tv_shows(self.people)
+    expected = {"Friends", "Baywatch", "Pokemon", "X-Files"}
+    self.assertEqual(expected, result)
